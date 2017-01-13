@@ -1,0 +1,62 @@
+/* Navbar CSS */
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: $navbar-height;
+	color: black;	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	border-radius: 0;
+
+	&.background {
+		background-color: white;
+	}
+
+	>div {
+		width: 33%;
+		padding: 0 5% !important;
+		line-height: 4em;
+		display: inline-block;
+	}
+
+	.logo {
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 2.5em;
+	}
+
+	a {
+		margin: 0.5em;
+	}
+}
+
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+// // .navbar .row{
+// // 	height: 100%;
+// // }
+
+// .navbar .row .column {
+	
+// }
+
+// .logo {
+// 	text-align: center;
+// 	font-size: 1.5em;
+// 	line-height: 2.5em;
+// }
+
+// .left-menu a, .right-menu a {
+// 	margin: 0 5%;
+// }
+

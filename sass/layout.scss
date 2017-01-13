@@ -1,0 +1,29 @@
+$navbar-height: 64px;
+
+
+
+$lightgrey: #fafafa;
+
+
+
+
+$font-healine: 'Quicksand', sans-serif;
+$font-subtext: 'Josefin Slab', serif;
+
+$font-default: 'Noto Sans', sans-serif;
+
+body{
+	font-family: $font-default;
+}
+
+ul {
+	list-style: none;
+  padding-left: 10px;
+}
+
+a {
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+}

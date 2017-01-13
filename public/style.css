@@ -1,0 +1,105 @@
+/* Global scope styles */
+.container.fluid {
+  padding: 0;
+  margin: 0;
+  max-width: 100% !important; }
+
+.flex-box {
+  display: flex; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+body {
+  font-family: "Noto Sans", sans-serif; }
+
+ul {
+  list-style: none;
+  padding-left: 10px; }
+
+a {
+  color: black; }
+
+a:hover {
+  text-decoration: none; }
+
+/* Component scope styles */
+/* Navbar CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 64px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  border-radius: 0; }
+  .navbar.background {
+    background-color: white; }
+  .navbar > div {
+    width: 33%;
+    padding: 0 5% !important;
+    line-height: 4em;
+    display: inline-block; }
+  .navbar .logo {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2.5em; }
+  .navbar a {
+    margin: 0.5em; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.footer {
+  background-color: #fafafa; }
+  .footer .row > div {
+    margin-top: 15px; }
+  .footer h4 {
+    margin-bottom: 10px; }
+  .footer ul li {
+    margin-top: 10px; }
+  .footer .subscription-form > div {
+    display: inline-block; }
+  .footer .social-icons {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 24px; }
+
+.home {
+  width: 100; }
+  .home > section {
+    margin-bottom: 50px; }
+  .home .image-slide {
+    height: 100vh;
+    background-color: #1E3E4E; }
+  .home .promo-wrapper .row > div {
+    height: 350px;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .home .promo-wrapper .row > div.our-story {
+      background-image: url("./img/ourstory.jpg"); }
+    .home .promo-wrapper .row > div, .home .promo-wrapper .row > div.new-arrival {
+      background-image: url("./img/newarrival.jpg"); }
+    .home .promo-wrapper .row > div span {
+      padding: 15px;
+      font-size: 2em;
+      border: 3px solid white; }
+
+.product-grid .image-wrapper img {
+  width: 100%; }
+
+.product-grid .product-info {
+  text-align: center; }
+  .product-grid .product-info span {
+    font-size: 1.1em; }
