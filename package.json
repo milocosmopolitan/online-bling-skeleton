@@ -9,6 +9,7 @@
   "author": "Milo Kang <milowebmaster@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
