@@ -12,7 +12,6 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "milligram": "^1.2.4"
+    "gulp-sass": "^3.1.0"
   }
 }

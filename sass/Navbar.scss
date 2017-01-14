@@ -14,16 +14,80 @@
 
 	&.background {
 		background-color: white;
+		.logo {
+			color: black;
+		}
 	}
 
 	>div {
 		width: 33%;
 		padding: 0 5% !important;
 		line-height: 4em;
-		display: inline-block;
+		display: inline-block;		
+	}
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    &.right-align li {
+    	float: right;
+    }
+    &.left-align li {
+    	float: left;
+    }    
+	}
+
+	.menu-wrapper {
+		li .submenu-wrapper {
+			display: none;
+			position: absolute;
+		}
+		li:hover{
+			.submenu-wrapper{
+				display: block;	
+			}
+		}
+	}
+
+	.search-wrapper{
+
+		.form-wrapper {						
+			
+			form input {
+				font-size: 14px;
+				border-color: #909090;
+		    border-style: solid;
+		    padding: 5px;
+	    	line-height: normal;
+
+			}
+		}
+
+		
+		a.close-toggle, .form-wrapper {
+			display: none;
+		}
+
+
+		&:hover {
+			a.close-toggle, .form-wrapper {
+				display: inline-block;
+				line-height: normal;
+			}
+			a.open-toggle{
+				display: none;
+			}
+		}
+	}
+
+	.iconmenu-wrapper {
+		font-size: 1.4em;
 	}
 
 	.logo {
+		color: white;
 		text-align: center;
 		font-size: 1.5em;
 		line-height: 2.5em;
@@ -33,30 +97,4 @@
 		margin: 0.5em;
 	}
 }
-
-
-.align-left {
-	text-align: left;
-}
-
-.align-right {
-	text-align: right;
-}
-// // .navbar .row{
-// // 	height: 100%;
-// // }
-
-// .navbar .row .column {
-	
-// }
-
-// .logo {
-// 	text-align: center;
-// 	font-size: 1.5em;
-// 	line-height: 2.5em;
-// }
-
-// .left-menu a, .right-menu a {
-// 	margin: 0 5%;
-// }
 

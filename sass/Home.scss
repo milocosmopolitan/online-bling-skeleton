@@ -1,3 +1,5 @@
+
+
 .home {
 	width: 100;
 
@@ -7,7 +9,12 @@
 
 	.image-slide {
 		height: 100vh;
+
+		background-image: url('./img/WDF_790401.jpg');			
 		background-color: #1E3E4E;
+		background-position: center; 
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.promo-wrapper {

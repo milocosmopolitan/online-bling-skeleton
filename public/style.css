@@ -11,6 +11,7 @@
   flex-wrap: wrap; }
 
 body {
+  margin: 0;
   font-family: "Noto Sans", sans-serif; }
 
 ul {
@@ -22,6 +23,13 @@ a {
 
 a:hover {
   text-decoration: none; }
+
+input:focus {
+  outline: none !important; }
+
+.breadcrumb {
+  background: none;
+  margin-top: 128px; }
 
 /* Component scope styles */
 /* Navbar CSS */
@@ -39,23 +47,49 @@ a:hover {
   border-radius: 0; }
   .navbar.background {
     background-color: white; }
+    .navbar.background .logo {
+      color: black; }
   .navbar > div {
     width: 33%;
     padding: 0 5% !important;
     line-height: 4em;
     display: inline-block; }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    .navbar ul.right-align li {
+      float: right; }
+    .navbar ul.left-align li {
+      float: left; }
+  .navbar .menu-wrapper li .submenu-wrapper {
+    display: none;
+    position: absolute; }
+  .navbar .menu-wrapper li:hover .submenu-wrapper {
+    display: block; }
+  .navbar .search-wrapper .form-wrapper form input {
+    font-size: 14px;
+    border-color: #909090;
+    border-style: solid;
+    padding: 5px;
+    line-height: normal; }
+  .navbar .search-wrapper a.close-toggle, .navbar .search-wrapper .form-wrapper {
+    display: none; }
+  .navbar .search-wrapper:hover a.close-toggle, .navbar .search-wrapper:hover .form-wrapper {
+    display: inline-block;
+    line-height: normal; }
+  .navbar .search-wrapper:hover a.open-toggle {
+    display: none; }
+  .navbar .iconmenu-wrapper {
+    font-size: 1.4em; }
   .navbar .logo {
+    color: white;
     text-align: center;
     font-size: 1.5em;
     line-height: 2.5em; }
   .navbar a {
     margin: 0.5em; }
-
-.align-left {
-  text-align: left; }
-
-.align-right {
-  text-align: right; }
 
 .footer {
   background-color: #fafafa; }
@@ -78,7 +112,11 @@ a:hover {
     margin-bottom: 50px; }
   .home .image-slide {
     height: 100vh;
-    background-color: #1E3E4E; }
+    background-image: url("./img/WDF_790401.jpg");
+    background-color: #1E3E4E;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .home .promo-wrapper .row > div {
     height: 350px;
     background-position: center;
@@ -103,3 +141,16 @@ a:hover {
   text-align: center; }
   .product-grid .product-info span {
     font-size: 1.1em; }
+
+.product-list .product-info .name {
+  font-size: 3em; }
+
+.product-list .product-info .price {
+  font-size: 2.5em; }
+
+.product-list .product-image .image-slide {
+  height: 100vh;
+  background-image: url("./img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat; }

@@ -66,9 +66,8 @@
 							    <button type="submit" class="fa fa-search"></button>
 							  </form>					  		
 					  	</div>
-					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>		  	
-					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>			
-					  	
+					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>
 			  		</li>					  
 					</ul>		    		    	
 		    </div>
@@ -76,83 +75,74 @@
 		  <!-- Navbar Component Ends -->
 
 		  <!-- Home Component Starts -->
-		  <div id="HomeComponent" class="home">
+		  <div id="ProductContainer" class="product-list">
 
-		  	<div class="image-slide">
-		  		<div class="image-info">
-		  			
-		  		</div>
-		  	</div>		  	
+		  	<!-- Breadcrumb Component Starts -->
+		  	<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Product</a></li>
+				  <li class="active">Hanover</li>
+				</ol>		 
+		  	<!-- Breadcrumb Component Ends -->
 
-	  		<!-- Product List Component Starts -->
-	  		<section class="product-grid container-fluid">
+	  		<!-- Product List Component Starts -->	  		
+	  		<section class="product-detail container-fluid">
 	  			<div class="row">
 
-			  		<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
+			  		<div class="product-info col-xs-12 col-lg-3">
+			  			<div class="container-fluid">
+			  				<div class="name row">Hanover</div>
+			  				<div class="price row">$99.99</div>
+			  				<div class="add-cart row">
+			  					<div class="quantity col-xs-4">
+			  						<input type="number" name="quantity" onChange="reactFunction" />
+			  					</div>
+			  					<div class="add-cart col-xs-8">
+			  						<button>Add to cart</button>
+			  					</div>
+		  					</div>
+		  					<div class="row">
+			  					<div class="col-xs-12">
+			  						<!-- This is Bootstrap we might need to consider npm install react-bootstrap -->
+			  						<!-- Nav tabs -->
+									  <ul class="nav nav-tabs" role="tablist">
+									    <li role="presentation" class="active"><a href="#detail" aria-controls="detail" role="tab" data-toggle="tab">Detail</a></li>
+									    <li role="presentation"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>								
+									  </ul>
 
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
+									  <!-- Tab panes -->
+									  <div class="tab-content">
+									    <div role="tabpanel" class="tab-pane active" id="detail">
+									    	<ul>
+						  						<li>Lifetime Warranty</li>
+						  						<li>Seafoam Gradient Mirrored Lens - Mirrored Lens Care</li>
+						  						<li>Handcrafted, Acetate Frames</li>
+						  						<li>100% UVA / UVB protection</li>
+						  						<li>Prescription Ready</li>
+						  						<li>Size 46-23-145</li>
+						  						<li>Premium Hard Case</li>
+						  						<li>Microfiber Cleaning Cloth</li>
+						  						<li>Free Shipping</li>
+						  					</ul>
+									    </div>
+									    <div role="tabpanel" class="tab-pane" id="description">
+									    	<p>
+									    		St. Louis derives inspiration from the French Quarter’s iconic 1800's cast iron balconies. Architectural in design, the brushed metal bridge is a bold and structurally significant feature. St. Louis’ adventurous style works best on bold personalities. 	
+									    	</p>									    	
+									    </div>
+									  </div>
+			  					</div>
 
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
+			  				</div>
+			  			</div>			  		
 						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
+						<div class="product-image col-xs-12 col-lg-9">
+							<div class="image-slide">								
+							</div>			  			
 						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
 			    </div>		
 		    </section>		  	
-		    <!-- Product List Component End -->	  		
-
-
-		  	<section class="container-fluid promo-wrapper">
-		  		<div class="row">
-		  			<div class="col-xs-12 col-lg-6 our-story">
-		  				<span>OUR STORY</span>		  			
-		  			</div>	
-		  			<div class="col-xs-12 col-lg-6 new-arrival">
-		  				<span>SHOP ARRIVALS</span>		  			
-		  			</div>	
-		  		</div>			    
-			  </section>			  
+		    <!-- Product List Component End -->	  			  
 		  </div>
 		  <!-- Home Component End -->
 			

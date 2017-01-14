@@ -12,3 +12,26 @@
 		}
 	}
 }
+
+.product-list{
+	
+	.product-info {
+		.name {
+			font-size: 3em;
+		}
+		.price {
+			font-size: 2.5em;
+		}
+
+	}
+	.product-image {
+		.image-slide {
+			height: 100vh;
+			background-image: url('./img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png');		
+			background-position: center; 
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
