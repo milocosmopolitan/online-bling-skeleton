@@ -12,11 +12,10 @@
 	margin: 0;
 	border-radius: 0;
 
-	&.background {
-		background-color: white;
-		.logo {
-			color: black;
-		}
+	
+
+	a {
+		margin: 0.5em;
 	}
 
 	>div {
@@ -38,6 +37,10 @@
     	float: left;
     }    
 	}
+
+	.iconmenu-wrapper {
+		font-size: 1.4em;
+	}	
 
 	.menu-wrapper {
 		li .submenu-wrapper {
@@ -64,7 +67,6 @@
 
 			}
 		}
-
 		
 		a.close-toggle, .form-wrapper {
 			display: none;
@@ -82,19 +84,33 @@
 		}
 	}
 
-	.iconmenu-wrapper {
-		font-size: 1.4em;
-	}
-
 	.logo {
-		color: white;
+		color: black;
 		text-align: center;
 		font-size: 1.5em;
 		line-height: 2.5em;
 	}
 
-	a {
-		margin: 0.5em;
+	&.main {
+		.logo {
+			color: white
+		}
 	}
+	
+	&.background {
+		background-color: white;
+		.logo {
+			color: black;
+		}
+		&.main {
+			.logo {
+				color: black
+			}
+		}
+	}
+
+
+
+	
 }
 

@@ -31,6 +31,9 @@ input:focus {
   background: none;
   margin-top: 128px; }
 
+footer {
+  margin-top: 20px; }
+
 /* Component scope styles */
 /* Navbar CSS */
 .navbar {
@@ -45,10 +48,8 @@ input:focus {
   align-items: center;
   margin: 0;
   border-radius: 0; }
-  .navbar.background {
-    background-color: white; }
-    .navbar.background .logo {
-      color: black; }
+  .navbar a {
+    margin: 0.5em; }
   .navbar > div {
     width: 33%;
     padding: 0 5% !important;
@@ -63,6 +64,8 @@ input:focus {
       float: right; }
     .navbar ul.left-align li {
       float: left; }
+  .navbar .iconmenu-wrapper {
+    font-size: 1.4em; }
   .navbar .menu-wrapper li .submenu-wrapper {
     display: none;
     position: absolute; }
@@ -81,15 +84,19 @@ input:focus {
     line-height: normal; }
   .navbar .search-wrapper:hover a.open-toggle {
     display: none; }
-  .navbar .iconmenu-wrapper {
-    font-size: 1.4em; }
   .navbar .logo {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 1.5em;
     line-height: 2.5em; }
-  .navbar a {
-    margin: 0.5em; }
+  .navbar.main .logo {
+    color: white; }
+  .navbar.background {
+    background-color: white; }
+    .navbar.background .logo {
+      color: black; }
+    .navbar.background.main .logo {
+      color: black; }
 
 .footer {
   background-color: #fafafa; }
@@ -142,15 +149,67 @@ input:focus {
   .product-grid .product-info span {
     font-size: 1.1em; }
 
-.product-list .product-info .name {
+.product-detail .product-info .row {
+  margin: 10px 0; }
+
+.product-detail .product-info .name {
   font-size: 3em; }
 
-.product-list .product-info .price {
+.product-detail .product-info .price {
   font-size: 2.5em; }
 
-.product-list .product-image .image-slide {
+.product-detail .product-info .tab-content ul {
+  padding: 20px 0 20px 20px;
+  list-style-type: circle; }
+
+.product-detail .product-info .tab-content p {
+  padding: 20px 0; }
+
+.product-detail .product-image .image-slide {
   height: 100vh;
   background-image: url("./img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png");
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat; }
+
+.add-cart input {
+  width: 100%;
+  color: #FD3F7B;
+  border: 2px solid #FD3F7B;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px 10px;
+  /* transition:  all 0.5s ease;   */ }
+
+.add-cart button {
+  overflow: hidden;
+  background-color: #fff;
+  width: 105px;
+  height: 34px;
+  color: #FD3F7B;
+  border: 2px solid #FD3F7B;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* transition: all 0.8s ease; */ }
+
+.cart-list .cart-table .thumbnail {
+  margin: 0; }
+
+.cart-list .cart-table tbody tr td {
+  vertical-align: middle; }
+
+.cart-list button {
+  overflow: hidden;
+  background-color: #fff;
+  width: 105px;
+  height: 34px;
+  color: #FD3F7B;
+  border: 2px solid #FD3F7B;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize; }

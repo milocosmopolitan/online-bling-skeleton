@@ -32,13 +32,13 @@
 		<div id="MainComponent">
 			
 			<!-- Navbar Component Starts  -->
-			<div id="NavbarComponent" class="navbar main">				
+			<div id="NavbarComponent" class="navbar">				
 		    <div class="menu-wrapper">
 		    	<ul class="left-align">
 					  <li>
 					  	<a>SHOP</a>
 					  	<div class="submenu-wrapper">
-					  		<ul>
+					  		<ul>					  			
 					  			<li><a>Category 1</a></li>
 					  			<li><a>Category 2</a></li>
 					  			<li><a>Category 3</a></li>
@@ -66,96 +66,101 @@
 							    <button type="submit" class="fa fa-search"></button>
 							  </form>					  		
 					  	</div>
-					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>		  	
-					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>			
-					  	
+					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>
 			  		</li>					  
 					</ul>		    		    	
 		    </div>
 			</div>			
 		  <!-- Navbar Component Ends -->
 
-		  <!-- Home Component Starts -->
-		  <div id="HomeComponent" class="home">
+		  <!-- Cart Component Starts -->		  
+		  <div id="CartContainer" class="shopping-cart">
 
-		  	<div class="image-slide">
-		  		<div class="image-info">
-		  			
-		  		</div>
-		  	</div>		  	
-
-	  		<!-- Product List Component Starts -->
-	  		<section class="product-grid container-fluid">
+		  	<!-- Breadcrumb Component Starts -->
+		  	<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Cart</li>
+				</ol>		 
+		  	<!-- Breadcrumb Component Ends -->
+	  		
+	  		<section class="cart-list container-fluid">
 	  			<div class="row">
+			  		<div class="col-xs-12 col-md-8 col-md-offset-2">
 
-			  		<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
+			  			<!-- CartLineItem component -->
+			  			<div>
+			  				<table class="cart-table table table-hover">
+								  <thead>
+								  	<tr>
+								  		<th class="col-xs-2">Image</th>
+									  	<th class="col-xs-4">Name</th>
+									  	<th class="col-xs-2">Qty</th>
+									  	<th class="col-xs-2">Price</th>
+									  	<th class="col-xs-2">Action</th>
+								  	</tr>							  	
+								  </thead>
+								  <tbody>
+								  	<!-- you can loop this section with list of car line item which belongs to the user -->
+								  	<tr>
+								  		<td class="col-xs-2">
+								  			<a href="#" class="thumbnail">
+										      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+										    </a>
+								  		</td>
+								  		<td class="col-xs-4">Hanover Sunglass</td>
+								  		<td class="col-xs-2"><input type="number" name="qty" /></td>
+								  		<td class="col-xs-2">$99.99</td>
+								  		<td class="col-xs-2">
+								  			<div class="lineitem-actions">
+								  				<i class="fa fa-times" aria-hidden="true"></i>
+								  			</div>
+								  		</td>
+								  	</tr>
+								  	<!-- section ends -->
+								  	<tr>
+								  		<td class="col-xs-2">
+								  			<a href="#" class="thumbnail">
+										      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+										    </a>
+								  		</td>
+								  		<td class="col-xs-4">Hanover Sunglass</td>
+								  		<td class="col-xs-2"><input type="number" name="qty" /></td>
+								  		<td class="col-xs-2">$99.99</td>
+								  		<td class="col-xs-2">
+								  			<div class="lineitem-actions">
+								  				<i class="fa fa-times" aria-hidden="true"></i>
+								  			</div>
+								  		</td>
+								  	</tr>
+								  	<tr>
+								  		<td class="col-xs-2">
+								  			<a href="#" class="thumbnail">
+										      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+										    </a>
+								  		</td>
+								  		<td class="col-xs-4">Hanover Sunglass</td>
+								  		<td class="col-xs-2"><input type="number" name="qty" /></td>
+								  		<td class="col-xs-2">$99.99</td>
+								  		<td class="col-xs-2">
+								  			<div class="lineitem-actions">
+								  				<i class="fa fa-times" aria-hidden="true"></i>
+								  			</div>
+								  		</td>
+								  	</tr>
+								  </tbody>
+								</table>
 
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
+								<button onClick="" class="submit">check out</button>	
+			  			</div>
+						</div>						
 			    </div>		
 		    </section>		  	
-		    <!-- Product List Component End -->	  		
 
-
-		  	<section class="container-fluid promo-wrapper">
-		  		<div class="row">
-		  			<div class="col-xs-12 col-lg-6 our-story">
-		  				<span>OUR STORY</span>		  			
-		  			</div>	
-		  			<div class="col-xs-12 col-lg-6 new-arrival">
-		  				<span>SHOP ARRIVALS</span>		  			
-		  			</div>	
-		  		</div>			    
-			  </section>			  
 		  </div>
-		  <!-- Home Component End -->
+		  <!-- Cart Component End -->
 			
+			<Footer />
 			<!-- Footer Component  -->
 			<div class="footer container-fluid">
 		  	<div class="row">

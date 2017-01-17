@@ -32,7 +32,7 @@
 		<div id="MainComponent">
 			
 			<!-- Navbar Component Starts  -->
-			<div id="NavbarComponent" class="navbar main">				
+			<div id="NavbarComponent" class="navbar">				
 		    <div class="menu-wrapper">
 		    	<ul class="left-align">
 					  <li>
@@ -66,96 +66,77 @@
 							    <button type="submit" class="fa fa-search"></button>
 							  </form>					  		
 					  	</div>
-					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>		  	
-					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>			
-					  	
+					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>
 			  		</li>					  
 					</ul>		    		    	
 		    </div>
 			</div>			
 		  <!-- Navbar Component Ends -->
 
-		  <!-- Home Component Starts -->
-		  <div id="HomeComponent" class="home">
+		  <!-- Cart Component Starts -->		  
+		  <div class="user-login">
 
-		  	<div class="image-slide">
-		  		<div class="image-info">
-		  			
-		  		</div>
-		  	</div>		  	
-
-	  		<!-- Product List Component Starts -->
-	  		<section class="product-grid container-fluid">
+		  	<!-- Breadcrumb Component Starts -->
+		  	<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Cart</li>
+				</ol>		 
+		  	<!-- Breadcrumb Component Ends -->
+	  		
+	  		<section class="login-wrapper container-fluid">
 	  			<div class="row">
-
-			  		<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-						<div class="product-item col-xs-12 col-lg-4">
-			  			<div class="image-wrapper">
-			  				<img src="http://cdn.shopify.com/s/files/1/0236/9929/products/StLouis-MatteBlack-Website-Front_large.png?v=1480979437">
-		  				</div>
-		  				<div class="product-info">
-		  					<span><strong>Product name</strong></span>
-		  					<span>$3.00</span>			  					
-		  				</div>
-						</div>
-
-			    </div>		
+	  				<div class="col-xs-12 col-md-8 col-md-offset-2">
+	  					<div class="container-fluid">
+	  						<div class="row">
+	  							<div class="col-xs-12 col-md-6">
+	  								<form class="login-form" onSubmit="">
+	  									<div>
+	  										<h3>Welcome!</h3>
+	  										<span>Login with credentials</span>
+	  									</div>
+	  									<div class="form-group">
+	  										<label>Email</label>
+	  										<input type="email" name="email" class="form-control" />
+	  									</div>
+	  									<div class="form-group">
+	  										<label>Password</label>
+	  										<input type="password" name="password" class="form-control" />
+	  									</div>
+	  									<button type="submit" class="submit">Login</button>
+	  								</form>
+	  							</div>
+	  							<div class="col-xs-12 col-md-6">
+	  								<form class="login-form" onSubmit="">
+	  									<div>
+	  										<h3>Register</h3>
+	  										<span>If you don't have account with us..</span>
+	  									</div>
+	  									<div class="form-group">
+	  										<label>Email</label>
+	  										<input type="email" name="email" class="form-control" />
+	  									</div>
+	  									<div class="form-group">
+	  										<label>Email</label>
+	  										<input type="email" name="email" class="form-control" />
+	  									</div>
+	  									<div class="form-group">
+	  										<label>Password</label>
+	  										<input type="password" name="password" class="form-control" />
+	  									</div>
+	  									<button type="submit" class="submit">Login</button>
+	  								</form>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>	
 		    </section>		  	
-		    <!-- Product List Component End -->	  		
 
-
-		  	<section class="container-fluid promo-wrapper">
-		  		<div class="row">
-		  			<div class="col-xs-12 col-lg-6 our-story">
-		  				<span>OUR STORY</span>		  			
-		  			</div>	
-		  			<div class="col-xs-12 col-lg-6 new-arrival">
-		  				<span>SHOP ARRIVALS</span>		  			
-		  			</div>	
-		  		</div>			    
-			  </section>			  
 		  </div>
-		  <!-- Home Component End -->
+		  <!-- Cart Component End -->
 			
+			<Footer />
 			<!-- Footer Component  -->
 			<div class="footer container-fluid">
 		  	<div class="row">
@@ -199,7 +180,7 @@
 			    	<form class="subscription-form">
 						  <div>
 						    <label for="subscription-email">New releases, exclusive promotions + more</label>
-						    <input type="email" class="form-control" name="email" id="subscription-email" placeholder="Email">
+						    <input type="email" class="form-group" name="email" id="subscription-email" placeholder="Email">
 						  </div>						  
 						  <button type="submit" class="btn btn-default">Submit</button>
 						</form>

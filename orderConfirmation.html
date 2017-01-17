@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Bling</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Noto+Sans|Quicksand" rel="stylesheet">
+
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+
+	<!-- Milligram CSS minified -->
+	<!-- <link rel="stylesheet" href="node_modules/milligram/dist/milligram.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="public/style.css">
+
+</head>
+<body>
+
+	<div id=main>
+		<!-- Main Component  -->		
+		<div id="MainComponent">
+			
+			<!-- Navbar Component Starts  -->
+			<div id="NavbarComponent" class="navbar">				
+		    <div class="menu-wrapper">
+		    	<ul class="left-align">
+					  <li>
+					  	<a>SHOP</a>
+					  	<div class="submenu-wrapper">
+					  		<ul>					  			
+					  			<li><a>Category 1</a></li>
+					  			<li><a>Category 2</a></li>
+					  			<li><a>Category 3</a></li>
+				  			</ul>
+					  	</div>
+				  	</li>
+					  <li>
+					  	<a>ABOUT</a>
+				  	</li>
+					  <li>
+					  	<a>PRESS</a>
+				  	</li>
+					</ul>		    	
+		    </div>
+		    <div class="logo">Online Bling</div>
+		    <div class="iconmenu-wrapper">
+		    	<ul class="right-align">
+		    		<li>
+					  	<a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>					  	
+				  	</li>					  
+		    		<li class="search-wrapper">					  	
+					  	<div class="form-wrapper">
+					  		<form action="/api/search" method="get" role="search">							  
+							    <input name="search" type="text" placeholder="SEARCH..." class="search-box-form hint text">
+							    <button type="submit" class="fa fa-search"></button>
+							  </form>					  		
+					  	</div>
+					  	<a class="open-toggle"><i class="fa fa-search" aria-hidden="true"></i></a>
+					  	<a class="close-toggle"><i class="fa fa-times" aria-hidden="true"></i></a>
+			  		</li>					  
+					</ul>		    		    	
+		    </div>
+			</div>			
+		  <!-- Navbar Component Ends -->
+
+		  <!-- Cart Component Starts -->		  
+		  <div id="CartContainer" class="order-confirmation">
+
+		  	<!-- Breadcrumb Component Starts -->
+		  	<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Cart</li>
+				</ol>		 
+		  	<!-- Breadcrumb Component Ends -->
+	  		
+	  		<section class="cart-list container-fluid">
+	  			<div class="row">
+			  		<div class="col-xs-12">
+			  			
+			  			<div class="container-fluid">
+			  				<div class="row">
+			  					<div class="col-xs-12 col-md-8">
+
+			  						<div class="container-fluid">
+			  							<form class="row" onSubmit="">
+			  								<div class="col-xs-12 col-md-6">
+			  									<h4>Shipping Information</h4>
+			  									<div class="form-group">
+			  										<label>Name</label>
+			  										<input type="text" name="shippingName" class="form-control" />
+			  									</div>				  									
+			  									<div class="form-group">
+			  										<label>Street Address</label>
+			  										<input type="text" name="shippingStreetAddress" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>Additional Address(apt, suite, etc)</label>
+			  										<input type="text" name="shippingAdditionalAddress" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>City</label>
+			  										<input type="text" name="shippingCity" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>State</label>
+			  										<input type="text" name="shippingState" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>Country</label>
+			  										<select name="shippingCountry" class="form-control">
+			  											<option>United State</option>
+			  											<option>Canada</option>
+			  										</select>			  										
+			  									</div>			  									
+			  								</div>
+			  								<div class="col-xs-12 col-md-6">
+			  									<h4>Billing Information</h4>
+			  									<div class="form-group">
+			  										<label>Card holder Name</label>
+			  										<input type="text" name="billingStreetAddress" class="form-control" />
+			  									</div>				  									
+			  									<div class="form-group">
+			  										<label>Street Address</label>
+			  										<input type="text" name="billingStreetAddress" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>Additional Address(apt, suite, etc)</label>
+			  										<input type="text" name="billingAdditionalAddress" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>City</label>
+			  										<input type="text" name="billingCity" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>State</label>
+			  										<input type="text" name="billingState" class="form-control" />
+			  									</div>
+			  									<div class="form-group">
+			  										<label>Country</label>
+			  										<select name="billingCountry" class="form-control">
+			  											<option>United State</option>
+			  											<option>Canada</option>
+			  										</select>			  										
+			  									</div>		
+
+			  									<!-- we should take a look at stripe -->
+			  									<div class="form-group">
+			  										<label>Select your card type</label>
+			  										<select name="card-type" class="form-control">
+			  											<option>Visa</option>
+			  											<option>Master</option>			  											
+			  											<option>Discovery</option>
+			  										</select>			  										
+			  									</div>
+													<div class="form-group">
+			  										<label>Card Number</label>
+			  										<input type="text" name="card-number" class="form-control" />
+			  									</div>
+			  								</div>
+
+			  							</form>
+			  							<div class="row">
+			  								<button type="submit" class="submit">Confirm Order</button>	
+			  							</div>
+			  						</div>
+			  						
+
+			  					</div>
+			  					<div class="col-xs-12 col-md-4">
+			  						<!-- CartLineItem component -->
+			  						<div>
+			  							<table class="cart-table table table-hover">
+											  <thead>
+											  	<tr>
+											  		<th class="col-xs-2">Image</th>
+												  	<th class="col-xs-4">Name</th>
+												  	<th class="col-xs-2">Qty</th>
+												  	<th class="col-xs-2">Price</th>
+												  	<th class="col-xs-2">Action</th>
+											  	</tr>							  	
+											  </thead>
+											  <tbody>
+											  	<!-- you can loop this section with list of car line item which belongs to the user -->
+											  	<tr>
+											  		<td class="col-xs-2">
+											  			<a href="#" class="thumbnail">
+													      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+													    </a>
+											  		</td>
+											  		<td class="col-xs-4">Hanover Sunglass</td>
+											  		<td class="col-xs-2">1</td>
+											  		<td class="col-xs-2">$99.99</td>
+											  		<td class="col-xs-2">
+											  			<div class="lineitem-actions">
+											  				<i class="fa fa-times" aria-hidden="true"></i>
+											  			</div>
+											  		</td>
+											  	</tr>
+											  	<!-- section ends -->
+											  	<tr>
+											  		<td class="col-xs-2">
+											  			<a href="#" class="thumbnail">
+													      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+													    </a>
+											  		</td>
+											  		<td class="col-xs-4">Hanover Sunglass</td>
+											  		<td class="col-xs-2">4</td>
+											  		<td class="col-xs-2">$99.99</td>
+											  		<td class="col-xs-2">
+											  			<div class="lineitem-actions">
+											  				<i class="fa fa-times" aria-hidden="true"></i>
+											  			</div>
+											  		</td>
+											  	</tr>
+											  	<tr>
+											  		<td class="col-xs-2">
+											  			<a href="#" class="thumbnail">
+													      <img src="./public/img/StLouis-Audubon-Blue-Website-Quarters_1024x1024.png" alt="...">
+													    </a>
+											  		</td>
+											  		<td class="col-xs-4">Hanover Sunglass</td>
+											  		<td class="col-xs-2">6</td>
+											  		<td class="col-xs-2">$99.99</td>
+											  		<td class="col-xs-2">
+											  			<div class="lineitem-actions">
+											  				<i class="fa fa-times" aria-hidden="true"></i>
+											  			</div>
+											  		</td>
+											  	</tr>
+											  </tbody>
+											</table>
+
+											
+			  						</div>	
+			  					</div>
+			  				</div>
+			  				
+			  			</div>
+			  			
+						</div>						
+			    </div>		
+		    </section>		  	
+
+		  </div>
+		  <!-- Cart Component End -->
+			
+			<Footer />
+			<!-- Footer Component  -->
+			<div class="footer container-fluid">
+		  	<div class="row">
+			    <div class="col-xs-6 col-lg-4">
+			    	<h4><strong>SHOP</strong></h4>
+			    	<ul>
+			    		<li>
+			    			<a><span>CATEGORY 1</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>CATEGORY 2</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>CATEGORY 3</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>CATEGORY 4</span></a>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <div class="col-xs-6 col-lg-4">
+			    	<h4><strong>NEED HELP?</strong></h4>
+			    	<ul>
+			    		<li>
+			    			<a><span>FAQ</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>CONTACT</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>SHIPPING + RETURN</span></a>
+			    		</li>
+			    		<li>
+			    			<a><span>TERMS + CONDITION</span></a>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <div class="col-xs-12 col-lg-4">
+			    	<h4><strong>GET LASTED FROM ONLINE BLING</strong></h4>			    	
+
+			    	<form class="subscription-form">
+						  <div>
+						    <label for="subscription-email">New releases, exclusive promotions + more</label>
+						    <input type="email" class="form-group" name="email" id="subscription-email" placeholder="Email">
+						  </div>						  
+						  <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+						<div class="social-icons">
+							<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+						</div>
+			    	
+			    </div>			    
+			  </div>
+			  <div class="row">
+			    <div class="col-xs-12 text-center">ONLINE BLING® is registered trademarks of , Drake Shits Gold LLC</div>
+			  </div>
+		  </div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+			// this javascript is written just to simulate the effect
+			$(document).ready(function(){
+		    window.onscroll = () => {navbarBackgroundChange()};
+
+				function navbarBackgroundChange() {
+				    if (document.body.scrollTop > 0){
+				    		$('.navbar').addClass("background")
+				    } else {
+				        $('.navbar').removeClass("background")
+				    }
+				}
+			});
+	
+	</script>
+</body>
+</html>
